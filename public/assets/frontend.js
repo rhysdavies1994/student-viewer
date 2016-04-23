@@ -1062,7 +1062,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("frontend/app")["default"].create({"name":"frontend","version":"0.0.0+25e38a87"});
+  require("frontend/app")["default"].create({"name":"frontend","version":"0.0.0+c71dd9d0"});
 }
 
 /* jshint ignore:end */
