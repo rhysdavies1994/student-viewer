@@ -1,5 +1,8 @@
 {{outlet}}
 
-{{#each model.students as |customer|}}
-  {{customer.firstName}} {{customer.lastName}}<br>
-{{/each}}
+<div class="container">
+    <h3>Student List</h3>
+    {{student-list students=model.students}}
+</div>
+
+
