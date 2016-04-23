@@ -1,8 +1,8 @@
 {{outlet}}
-
 <div class="container">
     <h3>Student List</h3>
-    {{student-list students=model.students}}
+  {{input type="text" class="form-control" value=searchFilter placeholder="Search" }}
+  {{student-list students=filteredStudents}}
 </div>
 
 
