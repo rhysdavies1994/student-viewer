@@ -1,28 +1,20 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ruby 2.2.2p95 (2015-04-13 revision 50295)
+Rails 4.2.5
+Ember.js version: 2.4.2
+node: 5.11.0
 
-Things you may want to cover:
+To run:
+* bundle install
+* rake db:migrate
+* rails s
 
-* Ruby version
+http://localhost:3000/api/students is JSON API
+http://localhost:3000/students is student viewer
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+If that doesnt work, ember development server:
+* npm install
+* bower install
+* inside rails directory: rails s
+* inside frontend directory: ember s -proxy http://localhost:3000
