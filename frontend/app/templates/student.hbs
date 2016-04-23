@@ -1,1 +1,45 @@
-{{model.firstName}} {{model.lastName}}
+<!-- Modal -->
+
+<div class="container">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="col-xs-9">
+                <h4>Student #{{model.id}}</h4>
+            </div>
+            <div class="col-xs-3" align="right">
+              {{#link-to 'students'}}
+                  <button class="btn btn-primary">Back</button>
+              {{/link-to}}
+            </div>
+        </div>
+        <div class="panel-body">
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>{{model.firstName}} {{model.lastName}}</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>{{model.email}}</td>
+                </tr>
+                <tr>
+                    <td>Birth Date</td>
+                    <td>{{model.birthDate}}</td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td>
+                      {{model.address}}<br>
+                      {{model.suburb}} {{model.state}} {{model.postcode}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>{{model.email}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
