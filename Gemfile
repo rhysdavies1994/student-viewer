@@ -45,3 +45,6 @@ group :development do
   gem 'spring'
 end
 
+
+#Json API
+gem 'jsonapi-resources'
